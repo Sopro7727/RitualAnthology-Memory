@@ -1,10 +1,3 @@
-/*
-    Noah Walker
-    Mods:
-        Randomized Starting Direction of Spaceships
-
-
-*/
 let config ={
     type: Phaser.CANVAS,
     width: 640,
@@ -17,4 +10,3 @@ let keyF, keyR, keyLEFT, keyRIGHT;
 //set UI sizes
 let borderUISize = game.config.height/15;
 let borderPadding = borderUISize/3;
-let highScore = 0;
