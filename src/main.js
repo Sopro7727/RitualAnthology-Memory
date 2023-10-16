@@ -2,7 +2,7 @@ var game;
 
 // there are 6 Objects
 // you can change this to be 1 to 6
-let numObjects = 4; 			// 4 is about the right size for my memory :)
+let numObjects = 6; 			// 4 is about the right size for my memory :)
 let maxImageWidth = 256/2;
 let maxImageHeight = 320/2;
 let offsetX = 10;
@@ -39,6 +39,7 @@ class BootScene extends Phaser.Scene {
 
 	preload() {
 		this.load.image('header', 'assets/images/FinalHeader.png');
+		this.load.image('bottom', 'assets/images/BottomText.png');
 		this.load.image('cardBack', 'assets/images/cardBack.png');
 		// I got these images from:
 		// 		<a href="https://www.freepik.com/free-vector/coloured-connectivity-icons_888676.htm#query=cellphone&from_query=Cellphoen&position=2&from_view=search&track=sph">Image by titusurya</a> on Freepik
@@ -76,6 +77,8 @@ class PlayGameScene extends Phaser.Scene {
 		let x = game.config.width / 2;
 		let y = 64;		// this is one half the height of the header image
 		this.add.image(x, y, 'header');
+		y = 448;
+		this.add.image(x,y,'bottom');
 
 		// I am only loading 4 of the Objects :)
 		let ObjectArray = ['wallet', 'BroomStick', 'Key', 'Potion', 'Phone', 'Headphone'];
