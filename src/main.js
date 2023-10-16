@@ -38,18 +38,19 @@ class BootScene extends Phaser.Scene {
 	}
 
 	preload() {
-		// Dave O made these with photoShop
-		this.load.image('header', 'assets/images/header.png');
+		this.load.image('header', 'assets/images/finalHeader.png');
 		this.load.image('cardBack', 'assets/images/cardBack.png');
-
 		// I got these images from:
-		// 		http://opengameart.com	
-		// 		CoMiGo - https://comigo.itch.io/
-		this.load.image('cat', 'assets/images/cat.png');
-		this.load.image('chick', 'assets/images/chick.png');
-		this.load.image('fox', 'assets/images/fox.png');
-		this.load.image('mouse', 'assets/images/mouse.png');
-		this.load.image('pig', 'assets/images/pig.png');
+		// 		<a href="https://www.freepik.com/free-vector/coloured-connectivity-icons_888676.htm#query=cellphone&from_query=Cellphoen&position=2&from_view=search&track=sph">Image by titusurya</a> on Freepik
+		// 		<a href="https://www.freepik.com/free-vector/set-vintage-design-key-vectors_3603179.htm#query=keys%20clipart&position=3&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
+		// 		<a href="https://www.freepik.com/free-vector/set-witch-wizard-objects_8700706.htm#query=wand%20clipart&position=6&from_view=search&track=ais">Image by brgfx</a> on Freepik
+		//		Image by <a href="https://www.freepik.com/free-vector/gradient-love-potion-illustration_22379760.htm#query=alchemy%20bag%20clipart&position=27&from_view=search&track=ais">Freepik</a>
+		// 		<a href="https://www.freepik.com/free-vector/headphone-gadget-cartoon-isolated_62534735.htm#query=earbuds%20clipart&position=10&from_view=search&track=ais">Image by brgfx</a> on Freepik
+		this.load.image('Headphone', 'assets/images/Headphones.png');
+		this.load.image('Potion', 'assets/images/Potion.png');
+		this.load.image('Phone', 'assets/images/Phone.png');
+		this.load.image('Key', 'assets/images/Key.png');
+		this.load.image('BroomStick', 'assets/images/Broomstick.png');
 		this.load.image('wallet', 'assets/images/Wallet.png');
 
 		// I got these clips from http://opengameart.com
@@ -73,11 +74,11 @@ class PlayGameScene extends Phaser.Scene {
 		this.chosenCards = [];		// holds the 2 cards being compared
 
 		let x = game.config.width / 2;
-		let y = 32;		// this is one half the height of the header image
+		let y = 64;		// this is one half the height of the header image
 		this.add.image(x, y, 'header');
 
 		// I am only loading 4 of the Objects :)
-		let ObjectArray = ['wallet', 'wallet', 'wallet', 'wallet'];
+		let ObjectArray = ['wallet', 'BroomStick', 'Key', 'Potion', 'Phone', 'Headphone'];
 
 		// create a 'shuffle' array before adding sprites
 		// this is a simple way to 'visualize' the board 
