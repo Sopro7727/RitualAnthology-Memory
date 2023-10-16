@@ -38,7 +38,7 @@ class BootScene extends Phaser.Scene {
 	}
 
 	preload() {
-		this.load.image('header', 'assets/images/finalHeader.png');
+		this.load.image('header', 'assets/images/FinalHeader.png');
 		this.load.image('cardBack', 'assets/images/cardBack.png');
 		// I got these images from:
 		// 		<a href="https://www.freepik.com/free-vector/coloured-connectivity-icons_888676.htm#query=cellphone&from_query=Cellphoen&position=2&from_view=search&track=sph">Image by titusurya</a> on Freepik
